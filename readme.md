@@ -1,10 +1,10 @@
-# 🎓 Course Portfolio — <Your Name>
+# 🎓 Course Portfolio — Roberto Pina
 
 > Personal progress page for CSCI4208. Keep this file updated as you complete labs, projects, and capstone milestones.
 
-- **Name:** <Your Name>
-- **Project Board (Project v2):** <paste your board URL here>
-- **Live Portfolio (GitHub Pages):** <https://USERNAME.github.io/REPO/>
+- **Name:** Roberto Pina
+- **Project Board (Project v2):** [(https://github.com/users/RZer0-315/projects/1)]
+- **Live Portfolio (GitHub Pages):** [https://RZer0-315.github.io/csci4208-portfolio-2025]
 
 ---
 
@@ -100,4 +100,5 @@
 ---
 
 <sub>Last updated: <!-- yyyy-mm-dd --> </sub>
+
 
