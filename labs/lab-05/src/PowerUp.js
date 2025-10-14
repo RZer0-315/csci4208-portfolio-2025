@@ -16,14 +16,26 @@ class PowerUp extends Phaser.Physics.Arcade.Sprite {
 // SlayPowerUp subclass underneath superclass
 class SlayPowerUp extends PowerUp {
     constructor(scene, x, y) {
-            super(scene, x, y, 'powerup-slay');
-        }
+        super(scene, x, y, 'powerup-slay');
+    }
         
-        applyEffect(player) {
-            // We need the scene to access the enemies list
-            const scene = this.scene;
-            scene.enemies.forEach(monster => monster.destroy());
-            scene.enemy_projectiles.forEach(bullet => bullet.destroy());
-            scene.cameras.main.flash();
+    applyEffect(player) {
+        // We need the scene to access the enemies list
+        const scene = this.scene;
+        scene.enemies.forEach(monster => monster.destroy());
+        scene.enemy_projectiles.forEach(bullet => bullet.destroy());
+        scene.cameras.main.flash();
+    }
+}
+
+class ProjectilePowerUp extends PowerUp {
+    constructor(scene, x, y) {
+        // Pass the specific texture key to the parent
+        super(scene, x, y, 'powerup-projectile');
+    }
+    
+    // Override the base method with specific logic
+    applyEffect(player) {
+        player.projectileScale = Math.min(player.projectileScale + 1, 3);
     }
 }
